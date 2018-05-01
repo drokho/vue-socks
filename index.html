@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Getting Started With Vue</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        
+        <div class="nav-bar"></div>
+        
+        <div id="app">
+            <product :premium="premium" @add-to-cart="addToCart" @remove-item="removeItem"></product>
+            <div class="cart">
+                <p>Cart({{ cart.length }})</p>
+            </div>
+            
+        </div>
+        
+        <script src="https://unpkg.com/vue"></script>
+        <script src="main.js"></script>   
+        
+        
+    </body>
+</html>
